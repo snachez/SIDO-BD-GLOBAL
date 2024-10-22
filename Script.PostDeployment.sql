@@ -11,7 +11,7 @@ BEGIN
 
 	DECLARE @HORA_INICIO VARCHAR(8) = '00:00:00'
 	DECLARE @HORA_FINAL VARCHAR(8) = '23:59:00'
-
+	 
 	-- Lunes
 	IF NOT EXISTS (SELECT 1 FROM [dbo].[HorarioFuncionamiento] WHERE [Id] = 1)
 	BEGIN
