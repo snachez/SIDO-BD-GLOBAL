@@ -1,0 +1,15 @@
+﻿
+CREATE   PROCEDURE [dbo].[usp_SelectHorarioFuncionamiento]
+AS
+BEGIN
+	---
+
+	DECLARE @JSON_RESULT NVARCHAR(MAX)
+		SET @JSON_RESULT  = (SELECT * FROM HorarioFuncionamiento FOR JSON PATH)---
+
+
+
+		SELECT @JSON_RESULT AS JSON_RESULT_SELECT
+
+	---
+END
